@@ -13,6 +13,240 @@
   <body>
     <h1>Hello, world!</h1>
 
+    <!-- First card -->
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Add a profile picture!
+      </div>
+      <form>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <label for="nameOfTask">Name:</label>
+          <input type="text" placeholder="Picture perfect." id="nameOfTask" disabled>          
+        </li>
+        <li class="list-group-item">
+          <label for="taskDescription">Description:</label>
+          <textarea placeholder="Please taks an image file of your choice and add it as a profile picture. You can even use gifs!" id="taskDescription" disabled></textarea>  
+        </li>
+        <li class="list-group-item">
+          <label for="assignTask">Assigned To:</label>
+          <input type="text" placeholder="You. c:" id="assignTask" disabled>  
+        </li>
+        <li class="list-group-item">
+          <label for="dueDate">Due Date:</label>
+          <input type="date" placeholder="When is it due?" id="dueDate">  
+        </li>
+        <li class="list-group-item">
+          <label for="status">Status Update:</label>
+          <select class="form-select">
+            <option selected>To do</option>
+            <option value="toDo">To do</option>
+            <option value="inProgress">In progress</option>
+            <option value="Review">Review</option>
+            <option value="Done">Done</option>
+          </select> 
+        </li>
+        <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+      </ul>
+    </form>
+  </div>
+  <!-- End of first card. -->
+
+  <!-- Second card -->
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      Verify your email address.
+    </div>
+    <form>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <label for="nameOfTask">Name:</label>
+        <input type="text" placeholder="Is this really you?" id="nameOfTask" disabled>          
+      </li>
+      <li class="list-group-item">
+        <label for="taskDescription">Description:</label>
+        <textarea placeholder="Look for an email from us, (it might be in your spam folder) and click on the link to verify your email address." id="taskDescription" disabled></textarea>  
+      </li>
+      <li class="list-group-item">
+        <label for="assignTask">Assigned To:</label>
+        <input type="text" placeholder="You again. c:" id="assignTask" disabled>  
+      </li>
+      <li class="list-group-item">
+        <label for="dueDate">Due Date:</label>
+        <input type="date" placeholder="When is it due?" id="dueDate">  
+      </li>
+      <li class="list-group-item">
+        <label for="status">Status Update:</label>
+        <select class="form-select">
+          <option selected>To do</option>
+          <option value="toDo">To do</option>
+          <option value="inProgress">In progress</option>
+          <option value="Review">Review</option>
+          <option value="Done">Done</option>
+        </select> 
+      </li>
+      <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+    </ul>
+  </form>
+</div>
+<!-- End of second card. -->
+
+<!-- Third card -->
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Add your first task!
+  </div>
+  <form>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label for="nameOfTask">Name:</label>
+      <input type="text" placeholder="Getting started." id="nameOfTask" disabled>          
+    </li>
+    <li class="list-group-item">
+      <label for="taskDescription">Description:</label>
+      <textarea placeholder="Create your first task using the 'create task' button." id="taskDescription" disabled></textarea>  
+    </li>
+    <li class="list-group-item">
+      <label for="assignTask">Assigned To:</label>
+      <input type="text" placeholder="You got this. c:" id="assignTask" disabled>  
+    </li>
+    <li class="list-group-item">
+      <label for="dueDate">Due Date:</label>
+      <input type="date" placeholder="When is it due?" id="dueDate">  
+    </li>
+    <li class="list-group-item">
+      <label for="status">Status Update:</label>
+      <select class="form-select">
+        <option selected>To do</option>
+        <option value="toDo">To do</option>
+        <option value="inProgress">In progress</option>
+        <option value="Review">Review</option>
+        <option value="Done">Done</option>
+      </select> 
+    </li>
+    <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+  </ul>
+</form>
+</div>
+<!-- End of third card. -->
+
+<!-- Fourth card -->
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Add your colleagues.
+  </div>
+  <form>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label for="nameOfTask">Name:</label>
+      <input type="text" placeholder="Teamwork." id="nameOfTask" disabled>          
+    </li>
+    <li class="list-group-item">
+      <label for="taskDescription">Description:</label>
+      <textarea placeholder="Search for your colleagues and add them to your tasks." id="taskDescription" disabled></textarea>  
+    </li>
+    <li class="list-group-item">
+      <label for="assignTask">Assigned To:</label>
+      <input type="text" placeholder="Who is working on it?" id="assignTask" disabled>  
+    </li>
+    <li class="list-group-item">
+      <label for="dueDate">Due Date:</label>
+      <input type="date" placeholder="When is it due?" id="dueDate">  
+    </li>
+    <li class="list-group-item">
+      <label for="status">Status Update:</label>
+      <select class="form-select">
+        <option selected>To do</option>
+        <option value="toDo">To do</option>
+        <option value="inProgress">In progress</option>
+        <option value="Review">Review</option>
+        <option value="Done">Done</option>
+      </select> 
+    </li>
+    <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+  </ul>
+</form>
+</div>
+<!-- End of fourth card. -->
+
+<!-- Fifth card -->
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Have fun!
+  </div>
+  <form>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label for="nameOfTask">Name:</label>
+      <input type="text" placeholder="Enjoy!" id="nameOfTask" disabled>          
+    </li>
+    <li class="list-group-item">
+      <label for="taskDescription">Description:</label>
+      <textarea placeholder="Enjoy using this app. Like, comment and subcribe. Don't forget to rate five stars." id="taskDescription" disabled></textarea>  
+    </li>
+    <li class="list-group-item">
+      <label for="assignTask">Assigned To:</label>
+      <input type="text" placeholder="You!" id="assignTask" disabled>  
+    </li>
+    <li class="list-group-item">
+      <label for="dueDate">Due Date:</label>
+      <input type="date" placeholder="When is it due?" id="dueDate">  
+    </li>
+    <li class="list-group-item">
+      <label for="status">Status Update:</label>
+      <select class="form-select">
+        <option selected>To do</option>
+        <option value="toDo">To do</option>
+        <option value="inProgress">In progress</option>
+        <option value="Review">Review</option>
+        <option value="Done">Done</option>
+      </select> 
+    </li>
+    <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+  </ul>
+</form>
+</div>
+<!-- End of fifth card. -->
+
+<!-- Hidden card -->
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    
+  </div>
+  <form>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label for="nameOfTask">Name:</label>
+      <input type="text" placeholder="Enter task's name." id="nameOfTask">          
+    </li>
+    <li class="list-group-item">
+      <label for="taskDescription">Description:</label>
+      <textarea placeholder="Describe your task." id="taskDescription"></textarea>  
+    </li>
+    <li class="list-group-item">
+      <label for="assignTask">Assigned To:</label>
+      <input type="text" placeholder="Who's working on this?" id="assignTask">  
+    </li>
+    <li class="list-group-item">
+      <label for="dueDate">Due Date:</label>
+      <input type="date" placeholder="When is it due?" id="dueDate">  
+    </li>
+    <li class="list-group-item">
+      <label for="status">Status Update:</label>
+      <select class="form-select" id="status">
+        <option selected>To do</option>
+        <option value="toDo">To do</option>
+        <option value="inProgress">In progress</option>
+        <option value="Review">Review</option>
+        <option value="Done">Done</option>
+      </select> 
+    </li>
+    <button id="save" value="SaveChanges" onclick="saveChanges">Save</button>
+  </ul>
+</form>
+</div>
+<!-- End of hidden card. -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
