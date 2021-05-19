@@ -1,0 +1,19 @@
+.container {
+    margin: 5%;
+    padding: 5%;   
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    margin: 5px;
+    order: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}

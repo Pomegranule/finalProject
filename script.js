@@ -8,29 +8,67 @@
 // const searchResult= document.getElementById("searchResult");
 
 
-function getItems() {
-    let taskName= document.getElementById("nameOfTask");
-    let enterDescription= document.getElementById("taskDescription");
-    let assignedTo= document.getElementById("assignTask");
-    let dueDate= document.getElementById("dueDate");
-    let status= document.getElementById("status")
+// 1st attempt at trying to make a clone.
 
-    let newTask= saveChanges(taskName, enterDescription, assignedTo, dueDate, status);
+//function createCard(){
+//     let emptyCard = document.getElementById("emptyTask");
+//     let bottomBody = document.getElementsByTagName("body");
+//     bottomBody.append((emptyCard).clone(true));
+// }
 
-    return newTask;
-}
+// let emptyCard = document.getElementById("emptyCard");
 
-saveChanges.onclick = function (nameOfTask, ) {
-    let newTask = {
-        "nameOfTask": nameOfTask,
-        "taskDescription": taskDescription,
-        "assignTask": assignTask,
+// createCard.onclick = function() {
+//     emptyCard.cloneNode(true);
+// }
+
+// $(document).ready(function(){
+//     $("createCard").click(function(){
+//       $("emptyTask").clone().appendTo("body");
+//     });
+//   });
+
+// function getItems() {
+//     let taskName= document.getElementById("nameOfTask");
+//     let enterDescription= document.getElementById("taskDescription");
+//     let assignedTo= document.getElementById("assignTask");
+//     let dueDate= document.getElementById("dueDate");
+//     let status= document.getElementById("status");
+
+//     let newTask= saveChanges(taskName, enterDescription, assignedTo, dueDate, status);
+
+//     return newTask;
+// }
+
+
+let taskName= document.getElementById("nameOfTask").value;
+let enterDescription= document.getElementById("taskDescription");
+let assignedTo= document.getElementById("assignTask");
+let dueDate= document.getElementById("dueDate");
+let status= document.getElementById("status");
+
+saveChanges.onclick = function (taskName,enterDescription, assignedTo, dueDate, status) {
+        let newTask = {
+        "nameOfTask": taskName,
+        "taskDescription": enterDescription,
+        "assignTask": assignedTo,
         "dueDate": dueDate,
         "status": status,
     }
     return newTask;
 
 }   
+
+// localstorage.setItem("tasks", "[]")
+// let list = JSON.parse(localstorage.getItem("tasks"))
+localStorage.setItem(taskName, enterDescription, assignedTo, dueDate, status);
+console.log(getItems(taskName, enterDescription, assignedTo, dueDate, status));
+
+
+// let newTask= getItems();
+
+// localStorage.setItem()
+
 
 //     const = enterQuote.value;
 
@@ -43,12 +81,12 @@ saveChanges.onclick = function (nameOfTask, ) {
 //     }
 // };
 
-for (let userQuotes = 0; userQuotes < localStorage.length; userQuotes++) {
-    const user= localStorage.key(userQuotes);
-    const quote= localStorage.getItem(user);
+// for (let userQuotes = 0; userQuotes < localStorage.length; userQuotes++) {
+//     const user= localStorage.key(userQuotes);
+//     const quote= localStorage.getItem(user);
 
-    favouriteQuotes.innerHTML +=`${user}: ${quote}<br />`;
-}
+//     favouriteQuotes.innerHTML +=`${user}: ${quote}<br />`;
+// }
 
 // This is 
 
@@ -67,3 +105,4 @@ for (let userQuotes = 0; userQuotes < localStorage.length; userQuotes++) {
 //         location.reload();
 //     }
 // }
+
