@@ -42,6 +42,16 @@ textarea {
     width: 100%;
 }
 
+textarea:invalid {
+    border-width: 2px;
+    border-color: red;
+}
+
+input:invalid {
+    border-width: 2px;
+    border-color: red;
+}
+
 /* #hiddenTask {
     visibility: hidden;
 } */
